@@ -1,8 +1,25 @@
 import React from 'react'
 import { Badge } from "react-bootstrap";
 import '../css/work.css';
+import boosterPackHeroesTable from '../files/Booster Pack Heroes.CT';
 
 const projects = [
+  {
+    title: "Reverse Engineering",
+    subInfo: "Memory manipulation of running applications",
+    language: "Ghidra, Cheat Engine",
+    link: boosterPackHeroesTable,
+    download: "Booster Pack Heroes.CT",
+    linkLabel: "Download .CT",
+    info: [
+      "I was recently working on reverse engineering running applications through memory manipulation.",
+      "I used Ghidra to read and analyze executables, and Cheat Engine to catch values such as currency and health in video games.",
+      "Once I found those values, I captured the pointers behind them and manipulated them to gain an advantage in single-player games.",
+      "One of the games I worked on is Booster Pack Heroes, a truly beautiful game with a rewarding progression across its acts, each with its own currency (coins, apples, skulls, frosts, rainbow currency and zenith).",
+      "You can download my Cheat Engine table below and load it in Cheat Engine. It is made for Booster Pack Heroes v1.0.27."
+    ],
+    date: "2017-01-01"
+  },
   {
     title: "Effortl3ssAI",
     subInfo: "prompt-to-on-chain action solution enabling users to simply provide a text prompt, and it handles the rest of the Web3 actions seamlessly.",
@@ -143,6 +160,9 @@ const infoPatternEncode = (text, key) => {
 
 const workPattern = (props) => {
   const encodedInfo = props.info.map((item, idx) => infoPatternEncode(item, `encodedInfo-${idx}`));
+  const linkProps = props.download
+    ? { download: props.download }
+    : { target: "_blank", rel: "noopener noreferrer" };
   return (
     <div className="myBox myBox--light">
       <div className="badge-parent">
@@ -159,9 +179,8 @@ const workPattern = (props) => {
       <a
         className="source-button pixel-borders pixel-box--warning hvr-underline-from-left"
         href={props.link}
-        target="_blank"
-        rel="noopener noreferrer">
-        Source Code</a>
+        {...linkProps}>
+        {props.linkLabel || "Source Code"}</a>
     </div>
   )
 }
