@@ -5,7 +5,7 @@ import "../css/about.css"
 const TechnologyGroup = ({ label, items }) => {
   return (
     <section className="tech-group-card pixel-borders pixel-box--warning resume-box--warning" aria-label={label}>
-      <h2 className="tech-group-label">{label}</h2>
+      <h3 className="tech-group-label">{label}</h3>
       <div className="tech-chip-list">
         {items.map((item) => (
           <span key={item} className="tech-chip pixel-borders pixel-box--warning">{item}</span>
@@ -44,17 +44,24 @@ export default function About() {
     },
     {
       label: 'Systems & Reverse Engineering',
-      items: ['Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra', 'Cheat Engine']
+      items: ['Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra']
     }
   ];
 
   return (
     <>
+      <header className="portfolio-intro">
+        <h1>Renas Mirkan KILIC</h1>
+        <p>
+          Capable software developer focused on solving problems and delivering useful software.
+          Tools change; sound engineering and adaptability matter.
+        </p>
+      </header>
       <div className="tech-parent-column">
-        <h1 className="tech-title">
+        <h2 className="tech-title">
           <span className="tech-title-full">Familiar Technologies</span>
           <span className="tech-title-compact">Tech.</span>
-        </h1>
+        </h2>
         {technologyGroups.map((group) => (
           <TechnologyGroup key={group.label} label={group.label} items={group.items} />
         ))}

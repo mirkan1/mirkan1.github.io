@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import rIcon from '../img/react-ico-evenXY.png';
+import profileImage from '../img/this_is_mirkan.png';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar as NavigationBar } from 'react-bootstrap';
 // import Blog from '../pages/Blog';
@@ -11,9 +11,9 @@ import Certifications from '../pages/Certifications';
 const routes = [
   //{ path: '/', name: 'Home', Component: Home },
   { path: '/', name: 'Home', Component: About },
-  { path: '/work', name: 'Projects', Component: Work },
+  { path: '/work/', name: 'Projects', Component: Work },
   // { path: '/blog', name: 'Blog', Component: Blog },
-  { path: '/certifications', name: 'Certifications', Component: Certifications },
+  { path: '/certifications/', name: 'Certifications', Component: Certifications },
   //{ path: '*', name: "NoMatch", Component: NoMatch}
 ]
 
@@ -53,7 +53,7 @@ function Navbar() {
     <Styles>
       <NavigationBar expand="md" className="navbar">
         <NavigationBar.Brand href="/">
-          <img alt="react icon" className="rnIcon" src={rIcon}></img>
+          <img alt="Renas Mirkan KILIC, home" className="profileIcon" src={profileImage}></img>
         </NavigationBar.Brand>
 
         <NavigationBar.Toggle aria-controls="basic-navbar-nav" onClick={() => infoButton()} />
@@ -99,10 +99,12 @@ const Styles = styled.div`
         align-items: baseline;
     }
 
-    .rnIcon {
+    .profileIcon {
         border: 2px solid #E6E6E6;
         border-radius: 50%;
       height: 60px;
+      width: 60px;
+      object-fit: cover;
         transition: 3s;
       margin-bottom: 0.5rem;
 
@@ -180,8 +182,9 @@ const Styles = styled.div`
           margin-right: 5px;
       }
 
-      .rnIcon {
+      .profileIcon {
         height: 48px;
+        width: 48px;
         margin-bottom: 0.5rem;
       }
     }

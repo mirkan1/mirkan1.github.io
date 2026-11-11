@@ -186,12 +186,15 @@ const workPattern = (props) => {
 
 export default function Work() {
   return (
-    <div className="work-grid">
-      {projects.map((p, index) => (
-        <div className="work-grid-item" key={`work-grid-item-${index}`}>
-          {workPattern(p)}
-        </div>
-      ))}
-    </div>
+    <section aria-label="Projects">
+      <h1>Projects</h1>
+      <div className="work-grid">
+        {projects.map((p, index) => (
+          <div className="work-grid-item" key={`work-grid-item-${index}`}>
+            {workPattern(p)}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

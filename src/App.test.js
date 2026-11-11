@@ -21,6 +21,7 @@ test('about page renders technology groups and resume link', () => {
   render(<About />);
 
   expect(screen.getByText('Familiar Technologies')).toBeInTheDocument();
+  expect(screen.getByText(/capable software developer focused on solving problems/i)).toBeInTheDocument();
   expect(screen.getByText('Computer Languages')).toBeInTheDocument();
   const resumeLink = screen.getByText('Request Resume').closest('a');
   expect(resumeLink).toHaveAttribute('href', expect.stringContaining('mailto:mirkanbaba1@gmail.com'));
@@ -46,7 +47,7 @@ test('about page lists systems and reverse engineering tools', () => {
   render(<About />);
 
   expect(screen.getByText('Systems & Reverse Engineering')).toBeInTheDocument();
-  ['C/C++', 'Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra', 'Cheat Engine'].forEach((tool) => {
+  ['C/C++', 'Visual Studio', 'Windows API', 'Kernel Drivers', 'Ghidra'].forEach((tool) => {
     expect(screen.getByText(tool)).toBeInTheDocument();
   });
 });
