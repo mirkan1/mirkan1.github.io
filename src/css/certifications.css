@@ -1,4 +1,4 @@
-.certifications-page {
+.certifications-panel {
     width: 100%;
     padding: 1.25rem;
     border-style: solid;
@@ -13,7 +13,7 @@
 
 .certifications-title {
     margin: 0 0 1rem;
-    color: #202020;
+    color: #f9c80e;
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 767px) {
-    .certifications-page {
+    .certifications-panel {
         padding: 1rem;
     }
 

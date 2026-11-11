@@ -42,6 +42,7 @@ This portfolio features:
 ## 🛠️ Development
 
 ### Prerequisites
+
 - Node 18.x
 - npm
 
@@ -75,6 +76,10 @@ npm run deploy
 - **Pixel-art Themed UI** with custom border styling
 - **Contact Integration** with email-based resume requests
 - **Dark Mode Support** with themed color scheme
+
+Page top spacing is shared in `src/css/App.css` through `.jumbo`; keep route
+styles focused on their content so headings stay aligned during navigation.
+Social links use balanced vertical padding in `src/css/footer.css`.
 
 ## 📁 Project Structure
 

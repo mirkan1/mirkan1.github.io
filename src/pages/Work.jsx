@@ -78,7 +78,7 @@ const projects = [
   {
     title: "This Website",
     subInfo: "Portfolio website",
-    link: "https://github.com/mirkan1/mirkan1portfolio",
+    link: "https://github.com/mirkan1/mirkan1.github.io",
     language: "React",
     info: ["A personal website showcasing projects and career aspirations in software engineering."],
     date: "2019-06-15"

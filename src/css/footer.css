@@ -54,20 +54,6 @@
       align-items: center;
     }
 
-    .linkedin {
-      margin-left: inherit;
-    }
-
-    .footer-b {
-      flex-wrap: wrap;
-      justify-content: center;
-
-      & > * {
-        margin-top: 10px;
-        flex-basis: 30%;
-        text-align: center;
-      }
-    }
     .mail-me {
       flex-wrap: wrap;
 
@@ -87,19 +73,22 @@
 
   .footer-b {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 4px 0;
-    margin: 0 auto 4px;
+    gap: 1rem clamp(1.5rem, 8vw, 6rem);
+    padding: 1rem;
+    margin: 0 auto;
     width: 100%;
 
-      & > * {
-        width: 50%;
+      & > a {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
       }
 
       img {
         filter: invert(100%);
-        margin-right: 12px;
       }
     }
     .mail-me {
@@ -109,15 +98,6 @@
     }
 
     @media only screen and (max-width: 700px) {
-      .footer-b {
-        padding: 0.5rem 0;
-        & > * {
-          margin-top: 10px;
-          flex-basis: auto;
-          width: auto;
-          text-align: center;
-        }
-      }      
       .mail-me {
         padding: 0px 1rem;
         & > * {
@@ -128,14 +108,6 @@
     }
 
     @media only screen and (min-width: 1200px) {
-      .footer-b {
-        padding: 0.5rem 25%;
-        & > * {
-          margin-top: 10px;
-          flex-basis: 50%;
-          flex-grow: 100;
-        }
-      }      
       .mail-me {
         padding: 0px 1rem;
         & > * {
@@ -144,4 +116,3 @@
         }
       }
     }
-

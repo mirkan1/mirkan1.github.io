@@ -507,9 +507,17 @@ body {
 
   .jumbo {
     border: black;
-    margin-top: -75px;
+    padding: 2rem 2rem 4rem;
     background: url('../img/bg3jpg.jpg') center top no-repeat fixed;
     margin-bottom: 0;
     background-color: black;
     color: white;
+  }
+
+  .jumbo > .container {
+    max-width: 80vw;
+  }
+
+  .jumbo h1 {
+    margin-top: 0;
   }

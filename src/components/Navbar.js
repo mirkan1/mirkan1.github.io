@@ -94,7 +94,7 @@ const Styles = styled.div`
         flex-direction: row;
         border-top: 4px black solid;
         border-bottom: 4px black solid;
-        margin-bottom: 36px;
+        margin-bottom: 0;
         transition: 0.3s ease-out;
         align-items: baseline;
     }
