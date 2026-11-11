@@ -39,7 +39,7 @@ test('work page offers the Booster Pack Heroes cheat table download', () => {
   const downloadLink = screen.getByText('Download .CT').closest('a');
   expect(downloadLink).toHaveAttribute('download', 'Booster Pack Heroes.CT');
   expect(downloadLink).toHaveAttribute('href', expect.stringContaining('Booster Pack Heroes'));
-  expect(screen.getByText('2017-01-01')).toBeInTheDocument();
+  expect(screen.getByText('2027-01-01')).toBeInTheDocument();
 });
 
 test('about page lists systems and reverse engineering tools', () => {

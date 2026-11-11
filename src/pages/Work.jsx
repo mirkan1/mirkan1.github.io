@@ -18,7 +18,7 @@ const projects = [
       "One of the games I worked on is Booster Pack Heroes, a truly beautiful game with a rewarding progression across its acts, each with its own currency (coins, apples, skulls, frosts, rainbow currency and zenith).",
       "You can download my Cheat Engine table below and load it in Cheat Engine. It is made for Booster Pack Heroes v1.0.27."
     ],
-    date: "2017-01-01"
+    date: "2027-01-01"
   },
   {
     title: "Effortl3ssAI",
@@ -26,7 +26,7 @@ const projects = [
     language: "Typescript, Solidity",
     link: "https://github.com/anii76/EthSingapore",
     info: ["I went to Singapore for a hackaton, endeup up building this project with a team of 5."],
-    date: "2026"
+    date: "2026-01-30"
   },
   {
     title: "jotform-api",
@@ -34,7 +34,7 @@ const projects = [
     language: "Python",
     link: "https://pypi.org/project/crossmark-jotform-api",
     info: ["This project is a third-party API for Jotform, built using Python."],
-    date: "2025"
+    date: "2025-06-18"
   },
   {
     title: "Paint App",
@@ -45,7 +45,7 @@ const projects = [
       "I found this project on Reddit, loved the idea,",
       "and contributed for a while. This app uses."
     ],
-    date: "2024"
+    date: "2024-10-22"
   },
   {
     title: "Datareporter",
@@ -56,7 +56,7 @@ const projects = [
       "This project involves Python for data processing,",
       "Node.js for backend, and React for frontend. Docker was used for deployment."
     ],
-    date: "2023"
+    date: "2023-03-12"
   },
   {
     title: "Defisherpa",
@@ -68,7 +68,7 @@ const projects = [
       "Focused on collecting fast-moving cryptocurrency data from multiple sources, cleaning it up, and making it usable through internal tools and dashboards.",
       "The work centered on automation, monitoring market activity, and delivering timely data for research and decision-making."
     ],
-    date: "2021"
+    date: "2021-10-15"
   },
   {
     title: "This Website",
@@ -76,7 +76,7 @@ const projects = [
     link: "https://github.com/mirkan1/mirkan1portfolio",
     language: "React",
     info: ["A personal website showcasing projects and career aspirations in software engineering."],
-    date: "2019"
+    date: "2019-06-15"
   },
   {
     title: "xhrchat",
@@ -84,7 +84,7 @@ const projects = [
     link: "https://github.com/mirkan1/xhrchat",
     language: "Express.js, Node.js, MongoDB",
     info: ["A chat program using AJAX with long polling for efficient communication."],
-    date: "2019"
+    date: "2019-04-21"
   },
   {
     title: "Shooting Game",
@@ -95,7 +95,7 @@ const projects = [
       "A mobile game where players shoot targets with bouncing balls.",
       "Inspired by arcade games and plans to integrate pixel art in future versions."
     ],
-    date: "2018"
+    date: "2018-04-03"
   },
   {
     title: "Elif's Ox",
@@ -103,7 +103,7 @@ const projects = [
     link: "https://github.com/lyk2018-python/elifin-okuzu",
     language: "Django, HTML, CSS",
     info: ["Collaborative project created during a summer camp in Turkey."],
-    date: "2018"
+    date: "2018-03-09"
   },
   {
     title: "BTC Bot",
@@ -111,7 +111,7 @@ const projects = [
     language: "Python, Telegram API",
     link: "https://github.com/mirkan1/Telegram_spam",
     info: ["A bot providing cryptocurrency updates and price alerts."],
-    date: "2017"
+    date: "2017-06-08"
   }
 ];
 
