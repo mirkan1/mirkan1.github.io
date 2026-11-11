@@ -1,0 +1,24 @@
+:root {
+  --site-font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  font-family: var(--site-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--site-font-family);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,124 @@
+.page-inner {
+    display: block!important;
+    max-width: 50rem!important;
+    height: 60vh!important;
+    overflow-y: scroll;
+    border: 2px solid silver;
+    padding: 10px;
+}
+
+.jumbo {
+    height: auto!important;
+    padding: 4rem 2rem!important;
+    padding-top: 6rem!important;
+}
+
+.container {
+    max-width: 80vw;
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.work-grid-item {
+    display: flex;
+    flex: 0 0 100%;
+}
+
+.work-grid-item .myBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 12px 1rem;
+    height: 28rem;
+}
+
+.work-grid-item .title {
+    margin-bottom: 0.5rem;
+}
+
+.work-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.work-description-panel {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #a88f06;
+    border-image-slice: 2;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
+    background: #f4e49b;
+    color: #202020;
+    padding: 0.5rem;
+    scrollbar-width: auto;
+    scrollbar-color: #202020 #f5f5f5;
+    margin-bottom: 0.5rem;
+}
+
+.work-description-panel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #f5f5f5;
+}
+
+.work-description-panel::-webkit-scrollbar {
+    width: 10px;
+    background-color: #cbad09;
+}
+
+.work-description-panel::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border: 2px solid #f5f5f5;
+}
+
+@supports (border-image-source: none) {
+    .work-description-panel {
+        border-radius: 8px;
+    }
+}
+
+.work-description-panel p,
+.work-description-panel .info {
+    margin-bottom: 0.5rem;
+}
+
+.work-description-panel .info {
+    margin-top: 0;
+}
+
+.work-grid-item .source-button {
+    margin-top: auto;
+}
+
+@media (max-width: 767px) {
+    .work-grid-item .myBox {
+        height: 24rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .work-grid-item {
+        flex: 0 0 calc((100% - 1rem) / 2);
+        max-width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media (min-width: 1024px) {
+    .work-grid-item {
+        flex: 0 0 calc((100% - 2rem) / 3);
+        max-width: calc((100% - 2rem) / 3);
+    }
+}
